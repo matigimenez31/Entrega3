@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500&display=swap" rel="stylesheet">
+        <title>Tercera Entrega</title>
+    </head>
+<body>
+    <header>
+        <h1 class="logo">Componentes de Pc</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="navBar">
+            <a href="./index.html">Inicio</a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+    <main>
+        <h2>Productos</h2>
+    <div>
+        <div>
+            <img src="./assets/img/concepto-10626702.jpg" alt="">
+            <h3>Procesador</h3>
+            <p>Precio: $40.000</p>
+            <button id="procesador-btn">Agregar al Carrito</button>
+        </div>
+        <div>
+            <img src="./assets/img/19204-1.jpg" alt="">
+            <h3>RAM</h3>
+            <p>Precio: $36.540</p>
+            <button id="ram-btn">Agregar al Carrito</button>
+        </div>
+        <div>
+            <img src="./assets/img/1623185866_1000.png" alt="">
+            <h3>Motherboard</h3>
+            <p>Precio: $25.000</p>
+            <button id="motherboard-btn">Agregar al Carrito</button>
+        </div>
+        <div>
+            <img src="./assets/img/1108-producto-nb-placa-de-video-evga-rtx-2060-xc-12gb-ver-4008274aea12ac2edfe1849.jpg" alt="">
+            <h3>Placa de Video</h3>
+            <p>Precio: $120.000</p>
+            <button id="placa-video-btn">Agregar al Carrito</button>
+        </div>
+        <div>
+            <img src="./assets/img/D_NQ_NP_791111-MLA53472926420_012023-W.jpg" alt="">
+            <h3>Fuente</h3>
+            <p>Precio: $16.400</p>
+            <button id="fuente-btn">Agregar al Carrito</button>
+        </div>
+        <div>
+            <img src="./assets/img/1585582201_hd_2_tb_sata_iii_64mb_wd_blue.jpg" alt="">
+            <h3>Disco Duro</h3>
+            <p>Precio: $7.900</p>
+            <button id="disco-duro-btn">Agregar al Carrito</button>
+        </div>
+        <div>
+            <img src="./assets/img/1642442492_ktc-product-ssd-snvs-2000g-1-zm-lg.jpg" alt="">
+            <h3>Disco Sólido</h3>
+            <p>Precio: $9.300</p>
+            <button id="disco-solido-btn">Agregar al Carrito</button>
+        </div>
+        <div>
+            <img src="./assets/img/1665606353766.jpg" alt="">
+            <h3>Gabinete</h3>
+            <p>Precio: $23.500</p>
+            <button id="gabinete-btn">Agregar al Carrito</button>
+        </div>
+    </div>
+    <hr />
+    <div id="carrito">
+        <h2> Carrito </h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+        <tbody id="carrito-tbody"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><b>Total:</b></td>
+                    <td><b id="total"></b></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </main>
+        <script src="main.js"></script>
+    </body>
+</html>
